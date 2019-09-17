@@ -34,7 +34,7 @@ def photo4ka(i,id,arr,phr):
     vk2.messages.send(
         peer_id=id,
         attachment=','.join(attachments),
-        message=phr[random.randint(0,9)],
+        message='Поздравляем нашего высокоуважаемого учителя с днём рождения!\n' + phr[random.randint(0,9)],
         random_id=''
     )
 
@@ -122,5 +122,3 @@ while True:
                 # vk.method("messages.send", {"user_id": event.object.from_id, "message": 'Приём',
                 #                                 "random_id": 0})
                 photo4ka(random.randint(0, 8),event.object.from_id,arr,phr)
-
-
