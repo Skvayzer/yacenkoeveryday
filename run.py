@@ -17,14 +17,10 @@ def write_msg(user_id,s):
 def write_chat_msg(peer_id,s):
 	vk.method('messages.send', {'peer_id': peer_id, 'message': s, 'random_id':''})
 
-def job(arr,phr,flag):
+def job(arr,phr):
 	print("I'm working...")
 	#write_chat_msg(2000000000 + 1, 'hello world')
-	if flag:
-		photo4kaa(2000000000+2)
-		flag=False
-	else:
-		photo4ka(random.randint(0, 8), 2000000000 + 2,arr,phr)
+	photo4ka(random.randint(0, 8), 2000000000 + 2,arr,phr)
 def photo4ka(i,id,arr,phr):
 	session = requests.Session()
 	attachments = []
@@ -103,9 +99,9 @@ phr=['Ёж - птица гордая, пока не пнёшь, не полет�
 	'И как бы все ни было на самом деле, важно помнить, что... \n Всё каефно :^)'
 	]
 
-flag=True
 
-schedule.every().day.at(timeik).do(job,arr,phr,flag)
+
+schedule.every().day.at(timeik).do(job,arr,phr)
 
 x = threading.Thread(target=thread, args=())
 x.start()
