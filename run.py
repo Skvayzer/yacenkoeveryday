@@ -75,7 +75,7 @@ vk2=vk.get_api()
 
 #write_msg('175383048', 'hello world')
 
-timeik="21:43"
+timeik="21:50"
 
 arr=['https://sun9-55.userapi.com/c855224/v855224589/ed621/HvbIwxiERTg.jpg',
 	'https://sun9-55.userapi.com/c855224/v855224589/ed629/SfPPSo_PKOE.jpg',
