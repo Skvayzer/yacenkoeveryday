@@ -21,7 +21,7 @@ def job(arr,phr):
 	print("I'm working...")
 	#write_chat_msg(2000000000 + 1, 'hello world')
 	photo4ka(random.randint(0, 8), 2000000000 + 2,arr,phr)
-	photo4ka(random.randint(0, 8), 2000000000 + 3,arr,phr)
+	photo4ka(random.randint(0, 8), 2000000000 + 4,arr,phr)
 def photo4ka(i,id,arr,phr):
 	session = requests.Session()
 	attachments = []
@@ -75,7 +75,7 @@ vk2=vk.get_api()
 
 #write_msg('175383048', 'hello world')
 
-timeik="21:50"
+timeik="21:57"
 
 arr=['https://sun9-55.userapi.com/c855224/v855224589/ed621/HvbIwxiERTg.jpg',
 	'https://sun9-55.userapi.com/c855224/v855224589/ed629/SfPPSo_PKOE.jpg',
