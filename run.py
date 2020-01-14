@@ -21,7 +21,7 @@ def job(arr,phr):
 	print("I'm working...")
 	#write_chat_msg(2000000000 + 1, 'hello world')
 	photo4ka(random.randint(0, 8), 2000000000 + 2,arr,phr)
-	photo4ka(random.randint(0, 8), 2000000000 + 4,arr,phr)
+	#photo4ka(random.randint(0, 8), 2000000000 + 4,arr,phr)
 def photo4ka(i,id,arr,phr):
 	session = requests.Session()
 	attachments = []
