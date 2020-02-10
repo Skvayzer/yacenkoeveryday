@@ -42,7 +42,7 @@ def photo4kaa(id):
 	session = requests.Session()
 	attachments = []
 	upload = vk_api.VkUpload(vk)
-	image_url = 'https://sun9-48.userapi.com/c850216/v850216877/1cde61/wLzd0Iej2Us.jpg'
+	image_url = 'paste you image url here'
 	image = session.get(image_url, stream=True)
 	photo = upload.photo_messages(photos=image.raw)[0]
 	attachments.append(
@@ -51,7 +51,7 @@ def photo4kaa(id):
 	vk2.messages.send(
 		peer_id=id,
 		attachment=','.join(attachments),
-		message='Поздравляем ШанСоню с Днём Рождения!! Congratulations!',
+		message='Поздравляем с Днём Рождения!! Congratulations!',
 		random_id=''
 	)
 def thread():
@@ -62,7 +62,7 @@ def thread():
 os.environ["TZ"] = "Europe/Moscow"
 time.tzset()
 
-token = "e8d4d88596d2f16e46e91cc7914034efb86d1f08cf1a3b5088303e19f7c40b1199a3ec112f70a48cc2648"
+token = "paste your token here"
 vk = vk_api.VkApi(token=token)
 
 vk._auth_token()
@@ -77,15 +77,8 @@ vk2=vk.get_api()
 
 timeik="05:42"
 
-arr=['https://sun9-55.userapi.com/c855224/v855224589/ed621/HvbIwxiERTg.jpg',
-	'https://sun9-55.userapi.com/c855224/v855224589/ed629/SfPPSo_PKOE.jpg',
-	'https://sun9-6.userapi.com/c855224/v855224589/ed632/IjzWOOLOPEI.jpg',
-	'https://sun9-48.userapi.com/c855224/v855224589/ed63b/Otdx66rccfc.jpg',
-	'https://sun9-4.userapi.com/c855224/v855224589/ed644/CgEq8s2p_lQ.jpg',
-	'https://sun9-5.userapi.com/c855224/v855224589/ed64d/NUxKl7o-CdU.jpg',
-	'https://sun9-54.userapi.com/c855224/v855224589/ed656/3ghb9WJJ7Kg.jpg',
-	'https://sun9-42.userapi.com/c855224/v855224589/ed65e/uRdEhrABL2g.jpg',
-	'https://sun9-7.userapi.com/c855224/v855224589/ed666/jtsev1m26E0.jpg'
+arr=['paste you image urls here'
+	
 	]
 
 phr=['Ёж - птица гордая, пока не пнёшь, не полетит',
